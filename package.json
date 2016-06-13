@@ -1,0 +1,22 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rm -rf css/build/*",
+   "production": "npm run cleanup && sass css/scss/style.scss css/build/style.css --style=compressed --sourcemap=none",
+    "development": "npm run cleanup && sass --watch css/scss:css/build --style==expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goodkoff/button.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goodkoff/button/issues"
+  },
+  "homepage": "https://github.com/Goodkoff/button#readme"
+}
